@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+1111111111
+<div id="myDiv"></div>
+2222222222
+<script>
+var xmlhttp = new XMLHttpRequest();
+var url = "http://www.w3schools.com/json/myTutorials.txt";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var myArr = JSON.parse(xmlhttp.responseText);
+        myFunction(myArr);
+    }
+}
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(jsontime) 
+{
+    var out = '<a>' + jsontime[0].display + '</a><br>';
+    
+    document.getElementById("myDiv").innerHTML = out;
+}
+
+myFunction({
+   "time" : "05:02:49 PM"
+});
+
+</script>
+
+
+</body>
+</html>
