@@ -28,6 +28,7 @@
 
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+
         <activity
             android:name=".SalesActivity"
             android:label="@string/title_activity_sales"
@@ -50,6 +51,8 @@
             android:label="@string/title_activity_entertainment"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </application>
 
 </manifest>

@@ -11,87 +11,116 @@
     tools:context="com.example.gapp.CreateEvent1Activity">
 
 
-<EditText
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:inputType="textPersonName"
-android:text="First Name"
-android:ems="10"
-android:id="@+id/firstname"
-android:layout_row="0"
-android:layout_column="0"
-android:layout_columnSpan="2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:text="FirstName:"
+        android:ems="10"
+        android:id="@+id/first_name"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"/>
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+
+    android:ems="10"
+    android:id="@+id/firstname"
+    android:layout_row="1"
+    android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="LastName:"
+        android:ems="10"
+        android:id="@+id/last_name"
+        android:layout_row="2"
+        android:layout_column="0" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Last Name"
+
         android:ems="10"
         android:id="@+id/lastname"
-        android:layout_row="1"
+        android:layout_row="3"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="NHS NO:"
+        android:ems="10"
+        android:id="@+id/nhsno"
+        android:layout_row="4"
         android:layout_column="0"
         android:layout_columnSpan="2"/>
 
-    <EditText
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="NHS Number"
-android:id="@+id/nhsnumber"
-android:layout_row="2"
-android:layout_column="0"
-android:layout_columnSpan="2"/>
 
-<TextView
+    <EditText
+android:layout_width="215dp"
+android:layout_height="wrap_content"
+
+android:id="@+id/nhsnumber"
+android:layout_row="5"
+android:layout_column="0" />
+
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/numberPicker2"
+
+        android:layout_row="7"
+        android:layout_column="0" />
+
+
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:id="@+id/numberPicker3"
+
+
+        android:layout_row="9"
+        android:layout_column="0" />
+
+    <TextView
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:inputType="date"
-android:text="Date"
+android:text="DOB:"
 android:ems="10"
 android:id="@+id/eventdate"
-android:layout_row="3"
-android:layout_column="0"
-android:layout_columnSpan="2"/>
-
+    android:layout_marginTop="20dp"
+android:layout_row="6"
+android:layout_column="0" />
 
     <NumberPicker
         android:layout_width="wrap_content"
-        android:layout_height="118dp"
+        android:layout_height="69dp"
         android:id="@+id/numberPicker1"
 
-        android:layout_row="6"
+        android:layout_row="8"
         android:layout_column="0" />
 
-    <NumberPicker
-        android:layout_width="wrap_content"
-        android:layout_height="119dp"
-        android:id="@+id/numberPicker2"
-        android:layout_row="6"
-        android:layout_column="1" />
-
-    <CheckBox
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="PT received"
-android:id="@+id/PTcheckBox"
-android:layout_row="8"
-android:layout_column="0" />
-<Button
+    <Button
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:text="EventSave"
 android:id="@+id/EventSave"
-android:layout_row="9"
+
 android:layout_column="0"
 android:onClick="onSaveEventClick"
 
-    />
+    android:layout_row="10" />
 
-    <NumberPicker
-        android:layout_width="wrap_content"
-        android:layout_height="116dp"
-        android:id="@+id/numberPicker3"
-        android:layout_row="6"
-        android:layout_column="2" />
+
 </GridLayout>

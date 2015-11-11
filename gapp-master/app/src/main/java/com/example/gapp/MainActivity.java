@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(view.getContext(), CreateEvent1Activity.class);
         startActivityForResult(myIntent, 0);
     }
+    public void onRecordPress(View view){
+
+       setContentView(R.layout.display_screen);
+    }
 
 
     @Override
