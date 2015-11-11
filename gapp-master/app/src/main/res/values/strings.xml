@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- All strings to do with App meta data -->
+    <string name="app_name">Gapp Project</string>
+    <string name="action_settings">Settings</string>
+
+    <!--All strings to do with main activity-->
+    <string name="Welcome">Welcome to the Gapp project</string>
+    <string name="new_event">New Event</string>
+    <string name="inspire">#GetInspired</string>
+    <string name="title_activity_inspire">Inspire Activity</string>
+
+    <!--All strings to do with Inspire activity -->
+    <string name="i_sales_title">Sales</string>
+    <string name="i_services_title">Services</string>
+    <string name="i_trust_grant_title">Trust/Grant</string>
+    <string name="i_entertainment_title">Entertainment</string>
+    <string name="title_activity_sales">SalesActivity</string>
+
+    <!--All strings to do with the Sales activity-->
+    <string name="s_new_event_title">New Event</string>
+    <string name="title_activity_database_test">DatabaseTest</string>
+    <string name="title_activity_services">ServicesActivity</string>
+    <string name="title_activity_entertainment">EntertainmentActivity</string>
+
+
+
+</resources>
