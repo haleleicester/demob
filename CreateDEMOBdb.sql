@@ -1,4 +1,4 @@
-/*SQLCMD Mode required*/
+ /*SQLCMD Mode required*/
 :SETVAR DatabaseName "DEMOBdb"
 :SETVAR UserName "username"
 :SETVAR strUserName N'username'
